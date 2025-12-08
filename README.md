@@ -1,10 +1,13 @@
 # Що таке принципи SOLID?
 **Принципи SOLID** - це п'ять основних керівних принципів, які покращюють дизайн програмного забезпечення, роблячи код більш підтримуваним і масштабованим.  
 - - - 
-### SOLID розшивровується:
-- **S** - Принцип єдиної відповідальності (Single-responsibility Principle)
-- **O** - Принцип відкритості-закритості (Open-Closed Principle)
-- **L** - Принцип Барбари Лісков (Liskov Substitution Principle)
+### SOLID розшифровується:
+- **S** - Принцип єдиної відповідальності *(Single-Responsibility Principle)*
+- **O** - Принцип відкритості-закритості *(Open-Closed Principle)*
+- **L** - Принцип Барбари Лісков *(Liskov Substitution Principle)*
+- **I** - Принцип розділення інтерфейсів *(Interface Segregation Principle)*
+- **D** - Принцип інверсії залежностей *(Dependency Inversion Principle)*
+
 
 
 
