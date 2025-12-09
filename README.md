@@ -7,7 +7,3 @@
 - **L** - Принцип Барбари Лісков *(Liskov Substitution Principle)*
 - **I** - Принцип розділення інтерфейсів *(Interface Segregation Principle)*
 - **D** - Принцип інверсії залежностей *(Dependency Inversion Principle)*
-
-
-
-
