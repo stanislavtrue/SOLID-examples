@@ -8,8 +8,6 @@
 
 Клас одночасно відповідає і за дані, і за вивід, і за збереження, що робить його надто залежним від змін. Зміна способу друку або способу збереження вимагатиме зміни самого класу `Report`, що порушує **SRP**.
 ```csharp
-using System;
-using System.IO;
 class Report
 {
     public string Text { get; set; }
@@ -44,8 +42,6 @@ class Program
 
 Кожен клас має лише одну причину для зміни, що відповідає принципу SRP та робить код більш гнучким, розширюваним і простим для тестування.
 ```csharp
-using System;
-using System.IO;
 class Report
 {
     public string Text { get; set; }
