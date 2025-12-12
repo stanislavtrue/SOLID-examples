@@ -64,7 +64,8 @@ class ReportPrint
     }
 }
 
-class ReportSave {
+class ReportSave
+{
     public void SaveToFile(Report report, string path)
     {
         File.WriteAllText(path, report.Text);
