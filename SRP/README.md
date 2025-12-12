@@ -11,19 +11,23 @@
 class Report
 {
     public string Text { get; set; }
+
     public Report(string text)
     {
         Text = text;
     }
+
     public void PrintReport()
     {
         Console.WriteLine($"Report: {Text}");
     }
+
     public void SaveReport(string path)
     {
         File.WriteAllText(path, Text);
     }
 }
+
 class Program
 {
     static void Main(string[] args)
@@ -45,11 +49,13 @@ class Program
 class Report
 {
     public string Text { get; set; }
+
     public Report(string text)
     {
         Text = text;
     }
 }
+
 class ReportPrint
 {
     public void PrintToConsole(Report report)
@@ -57,12 +63,14 @@ class ReportPrint
         Console.WriteLine($"Report: {report.Text}");
     }
 }
+
 class ReportSave {
     public void SaveToFile(Report report, string path)
     {
         File.WriteAllText(path, report.Text);
     }
 }
+
 class Program
 {
     static void Main(string[] args)
