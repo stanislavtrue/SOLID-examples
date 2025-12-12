@@ -4,22 +4,26 @@ class Rectangle
 {
     public virtual double Height { get; set; }
     public virtual double Width { get; set; }
+    
     public double Area()
     {
         return Height * Width;
     }
 }
+
 class Square : Rectangle
 {
     public override double Width
     {
         set { base.Width = base.Height = value; }
     }
+    
     public override double Height 
     {
         set { base.Width = base.Height = value; }
     }
 }
+
 class Program
 {
     static void Main(string[] args)
