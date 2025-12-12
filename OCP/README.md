@@ -8,12 +8,14 @@ class Motorcycle
     public string Brand { get; }
     public string Model { get; }
     public string Type { get; }
+
     public Motorcycle(string Brand, string Model, string Type)
     {
         this.Brand = Brand;
         this.Model = Model;
         this.Type = Type;
     }
+
     public void getMotorcycleType()
     {
         switch (this.Type)
@@ -36,12 +38,14 @@ class Motorcycle
         }
     }
 }
+
 class Program
 {
     static void Main(string[] args)
     {
         Motorcycle DucatiP = new Motorcycle("Ducati", "Panigale V4 S", "Sport Bike");
         Motorcycle DucatiD = new Motorcycle("Ducati", "Diavel V4", "Cruiser");
+
         DucatiP.getMotorcycleType();
         DucatiD.getMotorcycleType();
     }
@@ -58,47 +62,69 @@ class Program
 - `MotorcycleType` - абстрактний клас
 - `SportBike`, `Cruiser`, `NakedBike`, `AdventureBike` - конкретні реалізації
 ```csharp
-using System;
-class Motorcycle {
+class Motorcycle
+{
     public string Brand { get; }
     public string Model { get; }
     public MotorcycleType Type { get; }
-    public Motorcycle(string Brand, string Model, MotorcycleType Type) {
+
+    public Motorcycle(string Brand, string Model, MotorcycleType Type)
+    {
         this.Brand = Brand;
         this.Model = Model;
         this.Type = Type;
     }
-    public string GetType() {
+
+    public string GetType()
+    {
         return Type.getType();
     }
 }
-abstract class MotorcycleType {
+
+abstract class MotorcycleType
+{
     public abstract string getType();
 }
-class SportBike: MotorcycleType {
-    public override string getType() {
+
+class SportBike: MotorcycleType
+{
+    public override string getType()
+    {
         return "Sport Bike";
     }
 }
-class Cruiser : MotorcycleType {
-    public override string getType() {
+
+class Cruiser : MotorcycleType
+{
+    public override string getType()
+    {
         return "Cruiser";
     }
 }
-class NakedBike: MotorcycleType {
-    public override string getType() {
+
+class NakedBike: MotorcycleType
+{
+    public override string getType()
+    {
         return "Naked Bike";
     }
 }
-class AdventureBike: MotorcycleType {
-    public override string getType() {
+
+class AdventureBike: MotorcycleType
+{
+    public override string getType()
+    {
         return "Adventure Bike";
     }
 }
-class Program {
-    static void Main(string[] args) {
+
+class Program
+{
+    static void Main(string[] args)
+    {
         Motorcycle DucatiP = new Motorcycle("Ducati", "Panigale V4 S", new SportBike());
         Console.WriteLine($"The {DucatiP.Brand} {DucatiP.Model} motorcycle is a {DucatiP.GetType()}");
+
         Motorcycle DucatiD = new Motorcycle("Ducati", "Diavel V4", new Cruiser());
         Console.WriteLine($"The {DucatiD.Brand} {DucatiD.Model} motorcycle is a {DucatiD.GetType()}");
     }
