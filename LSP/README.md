@@ -42,4 +42,5 @@ class Program
     }
 }
 ```
+### Результат
 ![](https://github.com/user-attachments/assets/1ca70137-a151-4948-9a9e-a515a73571e4)
