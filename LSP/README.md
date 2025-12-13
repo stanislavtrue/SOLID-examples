@@ -50,8 +50,6 @@ class Program
 - Кожна фігура реалізує власну логіку розрахунку площі
 - Жоден клас не порушує очікування базового типу
 ```csharp
-using System;
-
 abstract class Shape
 {
     public abstract double Area();
