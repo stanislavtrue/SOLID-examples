@@ -6,9 +6,6 @@
 - Заміна бази даних вимагає зміни коду `DataService`
 - Складно тестувати клас без реальної бази даних
 ```csharp
-using System;
-using System.ComponentModel.Design.Serialization;
-
 class PostgreSqlDatabase
 {
     public void SaveData(string data)
