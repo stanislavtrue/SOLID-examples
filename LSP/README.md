@@ -6,4 +6,4 @@
 - У квадрата ці значення жорстко пов’язані між собою
 
 Перевизначення властивостей `Width` та `Height` у класі `Square` призводить до неочікуваної поведінки:
-![](https://github.com/user-attachments/assets/ae9b9d94-53c4-46c7-93ea-a2edc6bb65f6)
+![](https://github.com/user-attachments/assets/1ca70137-a151-4948-9a9e-a515a73571e4)
