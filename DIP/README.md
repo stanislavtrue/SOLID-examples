@@ -42,9 +42,6 @@ class Program
 # Виправлений код
 У виправленій версії вводиться абстракція `Database`. і клас `DataService` тепер залежить не від конкретної БД, а від інтерфейсу.
 ```csharp
-using System;
-using System.IO.Compression;
-
 interface Database
 {
     void SaveData(string data);
