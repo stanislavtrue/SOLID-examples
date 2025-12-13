@@ -6,5 +6,40 @@
 - У квадрата ці значення жорстко пов’язані між собою
 
 Перевизначення властивостей `Width` та `Height` у класі `Square` призводить до неочікуваної поведінки:
+```csharp
+class Rectangle
+{
+    public virtual double Height { get; set; }
+    public virtual double Width { get; set; }
+    
+    public double Area()
+    {
+        return Height * Width;
+    }
+}
 
+class Square : Rectangle
+{
+    public override double Width
+    {
+        set { base.Width = base.Height = value; }
+    }
+    
+    public override double Height 
+    {
+        set { base.Width = base.Height = value; }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Rectangle rectangle = new Square();
+        rectangle.Width = 4;
+        rectangle.Height = 5;
+        Console.WriteLine($"Area: {rectangle.Area()}");
+    }
+}
+```
 ![](https://github.com/user-attachments/assets/1ca70137-a151-4948-9a9e-a515a73571e4)
